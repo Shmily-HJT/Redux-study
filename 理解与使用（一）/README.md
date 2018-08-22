@@ -6,17 +6,23 @@
 它好比一个容器，装载着整个项目的数据源，充当着一个 ** 全局"状态"管理者 ** 的一个角色。</br>
 例如在Ract中，组件2想要跟组件3进行通信，则必须依赖组件1的存在：</br>
 ![image](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-one-1.jpg)
+</br>
+
 但是当Redux的引入后，整个组件的通信将会变得如此简单：</br>
 ![image](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-one-2.jpg)
 </br>
 </br>
+
 ##### 2、工作原理
 在Redux中，它是由Store、Reducer、Action这三兄弟构成，整个Redux运作也全靠这三兄弟的齐心协力。</br>
 **Store:** 三兄弟的老大哥，他负责管账，所有的财务都将由大哥负责。（Store相当于一个state容器，所有的数据都将保存在整个容器中）
 </br>
+</br>
 **Reducer:** 三兄弟的老二，他负责记账，一旦账单所有变化就会立即通报给大哥，然后大哥会根据账单做出相应财产调整。（Reducer相当于一个载体，一旦state发生改变，他就会将此信息传递给store并更新其中的数据）
 </br>
-** Action： ** 三兄弟的老三，负责对外社交，行贿之事都交由他负责，一旦谈判成功，老二就会记下这笔账并通报大哥。（Action相当于一个改变state的操作，用于定义Store中的state应该如何修改）
+</br>
+**Action：** 三兄弟的老三，负责对外社交，行贿之事都交由他负责，一旦谈判成功，老二就会记下这笔账并通报大哥。（Action相当于一个改变state的操作，用于定义Store中的state应该如何修改）
+</br>
 </br>
 结合React，下面这幅图将很好地诠释Redux的工作流程：</br>
 ![image](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-one-3.jpg)

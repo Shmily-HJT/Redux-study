@@ -3,9 +3,8 @@
 
 ## 理解
 #### 1、我眼中的Redux
-<font size=1>它好比一个容器，装载着整个项目的数据源，充当着一个**全局"状态"管理者**的一个角色。</font>
-    
-</br>
+它好比一个容器，装载着整个项目的数据源，充当着一个 **全局"状态"管理者** 的一个角色。</br>
+
 例如在Ract中，组件2想要跟组件3进行通信，则必须依赖组件1的存在：</br>
 ![image](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-one-1.jpg)
 </br>
@@ -39,13 +38,13 @@
 
 
 
-### 使用
-##### 1、安装
+## 使用
+#### 1、安装
 > npm install redux
 
 </br>
 
-##### 2、创建store(store.js文件)
+#### 2、创建store(store.js文件)
 ```javascript
 import { createStore ,combinereducers } from 'redux';
 /*这里的reducers是从reducer文件引入的，后续会说明*/
@@ -65,7 +64,7 @@ export default store;
 </br>
 </br>
 
-##### 3、reducers.js文件
+#### 3、reducers.js文件
 ```javascript
 /*
 *	每个Reducer都将接收两个参数
@@ -94,7 +93,7 @@ export default {Name,Age}
 </br>
 </br>
 
-##### 4、actions.js文件
+#### 4、actions.js文件
 ```javascript
 /*Action其实就是一个对象*/
 export function set_Name(parm) {
@@ -113,7 +112,7 @@ export function set_Age(parm) {
 </br>
 </br>
 
-##### 5、View层去触发改变Store
+#### 5、View层去触发改变Store
 ```javascript
 import {set_Name ,set_Age} from "./actions"
 import store from "./store.js"

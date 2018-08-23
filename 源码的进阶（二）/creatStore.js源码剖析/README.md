@@ -262,5 +262,5 @@ export default function createStore(reducer, preloadedState, enhancer) {
 </br>
 ![](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-two-one-2.jpg)
 </br>
-下一篇我们将剖析Redux最难以理解的一部分，也就是我们从一开始一直避讳的createStore方法中的第三个参数**“enhancer”**
+下一篇我们将剖析Redux最难以理解的一部分，也就是我们从一开始一直避讳的createStore方法中的第三个参数**enhancer**
 

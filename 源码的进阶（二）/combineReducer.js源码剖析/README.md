@@ -310,7 +310,7 @@ return function combination(state = {}, action) {
       }
     }
 
-	//这两个变量代表着是否有更新，和下一版的新的state
+    //这两个变量代表着是否有更新，和下一版的新的state
     let hasChanged = false
     const nextState = {}
 

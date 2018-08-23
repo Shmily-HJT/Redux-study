@@ -238,7 +238,9 @@ export default function createStore(reducer, preloadedState, enhancer) {
   /*
   * 初始化你的state（你的每一个reducer会传入一个state，该state将作为你的初始值）
   * 还记得createStore的第二个参数initState吗？个人感觉第二个参数很累赘
-  * 因为这里dispatch会初始化一次我们的state，且如果在开发环境下，还会去调用combineReducer文件中的getUnexpectedStateShapeWarningMessage这个方法，如果传入的initState的键名跟Reducers的键名不匹配，传入的initState将会被替换掉，还会报警告信息，因此个人感觉第二个参数initState很累赘（可能是我阅历太浅，分析不到位，仅是个人观点，毕竟Redux这个开源项目有600多个贡献者）
+  * 因为这里dispatch会初始化一次我们的state，且如果在开发环境下，还会去调用combineReducer文件中的getUnexpectedStateShapeWarningMessage
+  * 这个方法，如果传入的initState的键名跟Reducers的键名不匹配，传入的initState将会被替换掉，还会报警告信息，因此个人感觉第二个参数initState
+  * 很累赘（可能是我阅历太浅，分析不到位，仅是个人观点，毕竟Redux这个开源项目有600多个贡献者）
   */
   dispatch({ type: ActionTypes.INIT })
 

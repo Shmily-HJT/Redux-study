@@ -361,4 +361,4 @@ return function combination(state = {}, action) {
 总的来说，combineReducer最重要的作用就是返回了一个函数，且这个函数会根据我们传入的Reducer去得到一个nextState，最后根据这个nextState和原本的preState进行对比，决定是否更新当前的全局状态。
 </br>
 </br>
-下一篇，将带来**creatStore.js**的源码分析，只要你掌握了这两个js文件的源码，Redux也就手握大片天下了~~~
+下一篇，将带来 [creatStore.js的源码分析](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/creatStore.js%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90)，只要你掌握了这两个js文件的源码，Redux也就手握大片天下了~~~

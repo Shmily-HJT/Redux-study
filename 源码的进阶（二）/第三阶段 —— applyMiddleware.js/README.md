@@ -264,6 +264,6 @@ export default thunk;
 </br>
 
 
-***通过redux的基本用法和源码的进阶，下一章我们将继续介绍Redux在大型应用中的实战~~***
+***通过redux前三章的源码剖析，已经掌握了Redux最重要的三个js文件，下一篇我们将继续介绍源码中的最后一个bindAactionCreators.js文件***
 
 

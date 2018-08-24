@@ -3,7 +3,7 @@
 
 ## 理解
 #### 1、我眼中的Redux
-<font size="1">它好比一个容器，装载着整个项目的数据源，充当着一个 **全局"状态"管理者** 的一个角色。</font></br>
+它好比一个容器，装载着整个项目的数据源，充当着一个 **全局"状态"管理者** 的一个角色。</br>
 
 例如在Ract中，组件2想要跟组件3进行通信，则必须依赖组件1的存在：</br>
 ![image](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-one-1.jpg)

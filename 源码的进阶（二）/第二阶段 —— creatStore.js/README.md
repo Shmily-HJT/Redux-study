@@ -14,14 +14,14 @@ import isPlainObject from './utils/isPlainObject'
 
 function createStore(reducer, preloadedState, enhancer) {
 
-	/*
+    /*
     *  用于保证nextListeners不会污染currentListeners
     *  因为currentListeners和nextListeners都是引用类型，防止互相指向同一引用地址
     */
-	ensureCanMutateNextListeners(){}
+    ensureCanMutateNextListeners(){}
 
-	//拿到当前state的一个方法，会返回当前的currentState
-	getState(){}
+    //拿到当前state的一个方法，会返回当前的currentState
+    getState(){}
     
     //消息订阅，传入一个litsener，当我们调用dispatch方法的时候，会触发每一个litsener去执行
     subscribe(listener){}
@@ -50,7 +50,7 @@ function createStore(reducer, preloadedState, enhancer) {
 /*
 * 该方法接收三个参数
 * 1、第一个reducer经过我们之前的分析，已得知就是combineReducer最后返回出来的那个方法
-* 2、第二个参数代表初始化的state，一般不会用到，因为你在传入reducer后就会默认根据你的reducer返回值初始化全局状态
+* 2、第二个参数代表初始化的state，一般不会用到，因为你在传入reducer后就会根据你默认的reducer返回值初始化全局状态
 * 3、第三次参数代表强化redux的一个函数，本篇暂不讨论，下一篇将进行深入分析
 */
 export default function createStore(reducer, preloadedState, enhancer) {
@@ -67,7 +67,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
     if (typeof enhancer !== 'function') {
       throw new Error('Expected the enhancer to be a function.')
     }
-    //去使用enhancer改造你的createStore函数
+    //去使用enhancer改造你的createStore函数（这里暂时不用考虑，下一章节你会弄清楚）
     return enhancer(createStore)(reducer, preloadedState)
   }
 
@@ -76,7 +76,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
     throw new Error('Expected the reducer to be a function.')
   }
 
-  //combineReducer后返回的combination(state = {}, action)这个函数，这个函数最终会返回一个state
+  //currentReducer代表combineReducer后返回的combination(state = {}, action)这个函数，这个函数最终会返回一个state
   let currentReducer = reducer
   //传入的initState，初始化state
   let currentState = preloadedState        
@@ -91,7 +91,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
 
   //slice()方法用于浅拷贝一个数组，这里主要是保证nextListeners和currentListeners不会指向同一个引用
   function ensureCanMutateNextListeners() {
-  	//currentListeners只有一层，因此浅拷贝即可
+    //currentListeners只有一层，因此浅拷贝即可
     if (nextListeners === currentListeners) {
       nextListeners = currentListeners.slice()
     }
@@ -142,7 +142,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
       if (!isSubscribed) {
         return
       }
-      //如果当前正在通过reducer去更新state，则不允许取消订阅
+      //如果当前正在更新state，则不允许取消订阅
       if (isDispatching) {
         throw new Error(
           'You may not unsubscribe from a store listener while the reducer is executing. ' +
@@ -169,7 +169,7 @@ export default function createStore(reducer, preloadedState, enhancer) {
           'Use custom middleware for async actions.'
       )
     }
-    //且该action对象必须要有他的type属性
+    //且该action对象必须要有他的type属性，且每一个type属性都会与一个state一一对应
     if (typeof action.type === 'undefined') {
       throw new Error(
         'Actions may not have an undefined "type" property. ' +
@@ -238,7 +238,10 @@ export default function createStore(reducer, preloadedState, enhancer) {
   /*
   * 初始化你的state（你的每一个reducer会传入一个state，该state将作为你的初始值）
   * 还记得createStore的第二个参数initState吗？个人感觉第二个参数很累赘
-  * 因为这里dispatch会初始化一次我们的state，且如果在开发环境下，还会去调用combineReducer文件中的getUnexpectedStateShapeWarningMessage这个方法，如果传入的initState的键名跟Reducers的键名不匹配，传入的initState将会被替换掉，还会报警告信息，因此个人感觉第二个参数initState很累赘（可能是我阅历太浅，分析不到位，仅是个人观点，毕竟Redux这个开源项目有600多个贡献者）
+  * 因为这里dispatch会初始化一次我们的state，且如果在开发环境下
+  * 还会去调用combineReducer文件中的getUnexpectedStateShapeWarningMessage这个方法
+  * 如果传入的initState的键名跟Reducers的键名不匹配，传入的initState将会被替换掉，还会报警告信息
+  * 因此个人感觉第二个参数initState很累赘（可能是我阅历太浅，分析不到位，仅是个人观点，毕竟Redux这个开源项目有600多个贡献者）
   */
   dispatch({ type: ActionTypes.INIT })
 
@@ -262,5 +265,5 @@ export default function createStore(reducer, preloadedState, enhancer) {
 </br>
 ![](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-two-one-2.jpg)
 </br>
-下一篇我们将剖析Redux最难以理解的一部分，也就是我们从一开始一直避讳的createStore方法中的第三个参数**“enhancer”**
+下一篇我们将剖析Redux最难以理解的一部分 [**applyMiddleware.js**](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%20%E2%80%94%E2%80%94%20applyMiddleware.js) ，也就是我们从一开始一直避讳的createStore方法中的第三个参数 **enhancer** 
 

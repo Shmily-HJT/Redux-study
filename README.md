@@ -9,6 +9,7 @@
 ### 学习流程
 废话不多说，我们来看看 **《Redux从入门到放弃》** 这个系列的有哪些内容：
 </br>
+</br>
 **1、[理解与使用：](https://github.com/Shmily-HJT/Redux-study/tree/master/%E7%90%86%E8%A7%A3%E4%B8%8E%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89)** 通过本章节，你将初步认识redux，并理解它存在的意义，以及你将学会它在React中最简单的使用方法。
 </br>
 </br>

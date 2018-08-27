@@ -72,4 +72,4 @@ export default function bindActionCreators(actionCreators, dispatch) {
 
 </br>
 </br>
-我们在后续的文章将会介绍 **Redux应用实战** ,然后你会彻底理解这个方法的作用
+我们在后续的文章将会介绍**Redux应用实战**,然后你会彻底理解这个方法的作用

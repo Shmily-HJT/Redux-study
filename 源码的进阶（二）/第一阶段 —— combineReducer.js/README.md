@@ -1,4 +1,4 @@
-# Redux从入门到放弃 —— 源码的进阶（二）
+# 源码的进阶（1） —— combineReducers.js
 </br>
 
 

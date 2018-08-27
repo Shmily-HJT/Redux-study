@@ -1,4 +1,4 @@
-# Redux从入门到放弃 —— 源码的进阶（三）
+# 源码的进阶（3） —— applyMiddlewrap.js
 </br>
 
 ## applyMiddlewrap.js

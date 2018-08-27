@@ -67,7 +67,9 @@ export default function bindActionCreators(actionCreators, dispatch) {
 </br>
 如果你没有过实战使用，我相信你看完应该不会有太大收获，不过老样子，我们最后还是以图示之，希望能帮助你理解它的作用：
 </br>
-![展示图](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-two-four-1.jpg)
+
+![展示](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-two-four-1.jpg)
+
 </br>
 </br>
 我们在后续的文章将会介绍 **Redux应用实战** ,然后你会彻底理解这个方法的作用

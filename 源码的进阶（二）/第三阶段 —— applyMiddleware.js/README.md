@@ -271,4 +271,4 @@ export default thunk;
 </br>
 </br>
 
-**通过redux前三章的源码剖析，已经掌握了Redux最重要的三个js文件，下一篇我们将继续介绍源码中的最后一个bindAactionCreators.js文件**
+**通过redux前三章的源码剖析，已经掌握了Redux最重要的三个js文件，下一篇我们将继续介绍源码中的最后一个 [bindAactionCreators.js文件](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/%E7%AC%AC%E5%9B%9B%E9%98%B6%E6%AE%B5%20%E2%80%94%E2%80%94%20bindActionCreators.js)**

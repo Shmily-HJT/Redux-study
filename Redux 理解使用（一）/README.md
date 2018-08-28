@@ -36,6 +36,7 @@
 </br>
 结合React，下面这幅图将很好地诠释Redux的工作流程：
 </br>
+
 ![image](https://github.com/Shmily-HJT/Redux-study/blob/master/image/redux-one-3.jpg)
 
 </br>

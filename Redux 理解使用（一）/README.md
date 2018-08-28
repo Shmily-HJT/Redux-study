@@ -141,6 +141,6 @@ store.dispatch(set_Age(24));
 </br>
 
 
-**以上便是Redux的理解和基本用法，相信于你而言并没有什么难度，后面我们将继续我们的： [Redux从入门到放弃 —— 源码的进阶（二）](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89)**
+**以上便是Redux的理解和基本用法，相信于你而言并没有什么难度，后面我们将继续我们的： [Redux从入门到放弃 —— 源码的进阶（二）](https://github.com/Shmily-HJT/study-Redux-for-React/tree/master/Redux%20%E6%BA%90%E7%A0%81%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89)**
 
 

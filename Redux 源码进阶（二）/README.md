@@ -6,4 +6,4 @@
 
 - [第三阶段 —— applyMiddleware.js](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%20%E2%80%94%E2%80%94%20applyMiddleware.js)
 
-- [第四阶段 —— bindAactionCreators.js](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/%E7%AC%AC%E5%9B%9B%E9%98%B6%E6%AE%B5%20%E2%80%94%E2%80%94%20bindActionCreators.js)
+- [第四阶段 —— bindAactionCreators.js](https://github.com/Shmily-HJT/study-Redux-for-React/tree/master/Redux%20%E6%BA%90%E7%A0%81%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/%E7%AC%AC%E5%9B%9B%E9%98%B6%E6%AE%B5%20%E2%80%94%E2%80%94%20bindActionCreators.js)

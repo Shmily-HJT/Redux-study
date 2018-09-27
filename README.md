@@ -10,7 +10,7 @@
 废话不多说，我们来看看 **《Redux从入门到放弃》** 这个系列的有哪些内容：
 </br>
 </br>
-**1、[Redux 理解使用：](https://github.com/Shmily-HJT/Redux-study/tree/master/%E7%90%86%E8%A7%A3%E4%B8%8E%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89)** 通过本章节，你将初步认识redux，并理解它存在的意义，以及你将学会它在React中最简单的使用方法。
+**1、[Redux 理解使用：](https://github.com/Shmily-HJT/study-Redux-for-React/tree/master/Redux%20%E7%90%86%E8%A7%A3%E4%BD%BF%E7%94%A8%EF%BC%88%E4%B8%80%EF%BC%89)** 通过本章节，你将初步认识redux，并理解它存在的意义，以及你将学会它在React中最简单的使用方法。
 </br>
 </br>
 **2、[Redux 源码进阶：](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89)** 该章节又会细分为四个阶段，每个阶段都会对部分源码进行深入学习

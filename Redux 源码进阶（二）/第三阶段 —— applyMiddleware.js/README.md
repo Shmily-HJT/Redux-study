@@ -222,7 +222,7 @@ function action(name) {
 //但是我们可以惊奇发现，该action其实在3s之后还是会传入一个对象给dispatch函数
 function action() {
     return (dispatch, getState) => {
-		setTimeout(()=>{
+	setTimeout(()=>{
         	dispatch({
                 type: 'actionType',
                 name: "shmily"
@@ -238,7 +238,7 @@ function action() {
 //一段10行的代码，有一大半是按照中间件模板来编写，算上大括号只有3行代码是自己的加入的......
 function createThunkMiddleware(extraArgument) {
   return ({ dispatch, getState }) => next => action => {
-  	/*
+   /*
     *	action本来应该是一个对象，这里处理异步的关键就在于我们的action变成了一个函数
     *	如果action是一个函数就将dispatch, getState参数传入
     *	在我们使用时便可以在异步拿到数据后，直接利用dispatch去改变store

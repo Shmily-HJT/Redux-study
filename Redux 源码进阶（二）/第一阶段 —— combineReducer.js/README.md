@@ -342,7 +342,7 @@ return function combination(state = {}, action) {
 
 可能读完后的你还是有点蒙蔽状态，没关系，我们再通过一个流程图看看他到底干了什么事情：
 </br>
-![](../image/redux-two-one-1.jpg)
+![](../../image/redux-two-one-1.jpg)
 </br>
 </br>
 总的来说，combineReducer 最重要的作用就是返回了一个函数，且这个函数也是一个 reducer，只是它负责和管理的 state 是全局 state，他会遍历执行每一个 reducer，最后得到一个 nextState，最后根据每个 reducer 的 nextState 和原本的 preState 进行对比，决定是否更新当前的全局状态。

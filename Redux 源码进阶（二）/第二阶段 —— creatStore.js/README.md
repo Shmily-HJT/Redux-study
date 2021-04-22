@@ -245,6 +245,6 @@ export default function createStore(reducer, preloadedState, enhancer) {
 
 如果看完分析还是一脸懵逼，我们将以一幅图来简单理解**creatStore.js 和 combineReducer.js**这两个方法如何打造大片 Redux 江山的：
 </br>
-![](../image/redux-two-one-2.jpg)
+![](../../image/redux-two-one-2.jpg)
 </br>
 下一篇我们将剖析 Redux 最难以理解的一部分 [**applyMiddleware.js**](https://github.com/Shmily-HJT/Redux-study/tree/master/%E6%BA%90%E7%A0%81%E7%9A%84%E8%BF%9B%E9%98%B6%EF%BC%88%E4%BA%8C%EF%BC%89/%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%20%E2%80%94%E2%80%94%20applyMiddleware.js) ，也就是我们从一开始一直避讳的 createStore 方法中的第三个参数 **enhancer**

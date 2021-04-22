@@ -68,7 +68,7 @@ export default function bindActionCreators(actionCreators, dispatch) {
 如果你没有过实战使用，我相信你看完应该不会有太大收获，不过老样子，我们最后还是以图示之，希望能帮助你理解它的作用：
 </br>
 
-![展示](../image/redux-two-four-1.jpg)
+![展示](../../image/redux-two-four-1.jpg)
 
 </br>
 </br>

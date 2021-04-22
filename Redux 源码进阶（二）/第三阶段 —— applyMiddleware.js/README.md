@@ -281,7 +281,7 @@ export default thunk;
 
 看到这，如果我们心心相映，相信你已经基本参透 redux 的原理了，老样子，如果此时的你还是有点蒙蔽，我们将结合前面两章的源码分析，以图示之整个中间件流程：
 </br>
-![流程图](../image/redux-two-three-1.jpg)
+![流程图](../../image/redux-two-three-1.jpg)
 </br>
 </br>
 </br>
